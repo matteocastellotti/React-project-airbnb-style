@@ -1,0 +1,3 @@
+export const appConstants = {
+    CURRENT_BREAKPOINT_CHANGED: 'CURRENT_BREAKPOINT_CHANGED'
+}

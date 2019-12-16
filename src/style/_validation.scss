@@ -1,0 +1,151 @@
+input:not([type]).invalid,
+input[type=text]:not(.browser-default).invalid,
+input[type=password]:not(.browser-default).invalid,
+input[type=email]:not(.browser-default).invalid,
+input[type=url]:not(.browser-default).invalid,
+input[type=time]:not(.browser-default).invalid,
+input[type=date]:not(.browser-default).invalid,
+input[type=datetime]:not(.browser-default).invalid,
+input[type=datetime-local]:not(.browser-default).invalid,
+input[type=tel]:not(.browser-default).invalid,
+input[type=number]:not(.browser-default).invalid,
+input[type=search]:not(.browser-default).invalid,
+textarea.materialize-textarea.invalid,
+select:not(.browser-default).invalid {
+  border: 1px solid #F44336 !important;
+}
+
+input:not([type])+label,
+input[type=text]:not(.browser-default)+label,
+input[type=password]:not(.browser-default)+label,
+input[type=email]:not(.browser-default)+label,
+input[type=url]:not(.browser-default)+label,
+input[type=time]:not(.browser-default)+label,
+input[type=date]:not(.browser-default)+label,
+input[type=datetime]:not(.browser-default)+label,
+input[type=datetime-local]:not(.browser-default)+label,
+input[type=tel]:not(.browser-default)+label,
+input[type=number]:not(.browser-default)+label,
+input[type=search]:not(.browser-default)+label,
+textarea.materialize-textarea+label,
+select:not(.browser-default)+label {
+  width: 100%;
+}
+
+input:not([type]).invalid+label:after,
+input:not([type]).valid+label:after,
+input[type=text]:not(.browser-default).invalid+label:after,
+input[type=text]:not(.browser-default).valid+label:after,
+input[type=password]:not(.browser-default).invalid+label:after,
+input[type=password]:not(.browser-default).valid+label:after,
+input[type=email]:not(.browser-default).invalid+label:after,
+input[type=email]:not(.browser-default).valid+label:after,
+input[type=url]:not(.browser-default).invalid+label:after,
+input[type=url]:not(.browser-default).valid+label:after,
+input[type=time]:not(.browser-default).invalid+label:after,
+input[type=time]:not(.browser-default).valid+label:after,
+input[type=date]:not(.browser-default).invalid+label:after,
+input[type=date]:not(.browser-default).valid+label:after,
+input[type=datetime]:not(.browser-default).invalid+label:after,
+input[type=datetime]:not(.browser-default).valid+label:after,
+input[type=datetime-local]:not(.browser-default).invalid+label:after,
+input[type=datetime-local]:not(.browser-default).valid+label:after,
+input[type=tel]:not(.browser-default).invalid+label:after,
+input[type=tel]:not(.browser-default).valid+label:after,
+input[type=number]:not(.browser-default).invalid+label:after,
+input[type=number]:not(.browser-default).valid+label:after,
+input[type=search]:not(.browser-default).invalid+label:after,
+input[type=search]:not(.browser-default).valid+label:after,
+textarea.materialize-textarea.invalid+label:after,
+textarea.materialize-textarea.valid+label:after,
+select:not(.browser-default).invalid+label:after,
+select:not(.browser-default).valid+label:after {
+  display: block;
+}
+
+input:not([type])+label:after,
+input[type=text]:not(.browser-default)+label:after,
+input[type=password]:not(.browser-default)+label:after,
+input[type=email]:not(.browser-default)+label:after,
+input[type=url]:not(.browser-default)+label:after,
+input[type=time]:not(.browser-default)+label:after,
+input[type=date]:not(.browser-default)+label:after,
+input[type=datetime]:not(.browser-default)+label:after,
+input[type=datetime-local]:not(.browser-default)+label:after,
+input[type=tel]:not(.browser-default)+label:after,
+input[type=number]:not(.browser-default)+label:after,
+input[type=search]:not(.browser-default)+label:after,
+textarea.materialize-textarea+label:after,
+.select-wrapper+label:after,
+select:not(.browser-default)+label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-out, .2s color ease-out;
+  transition: .2s opacity ease-out, .2s color ease-out;
+}
+
+input:not([type]).invalid+label:after,
+input:not([type]):focus.invalid+label:after,
+input[type=text]:not(.browser-default).invalid+label:after,
+input[type=text]:not(.browser-default):focus.invalid+label:after,
+input[type=password]:not(.browser-default).invalid+label:after,
+input[type=password]:not(.browser-default):focus.invalid+label:after,
+input[type=email]:not(.browser-default).invalid+label:after,
+input[type=email]:not(.browser-default):focus.invalid+label:after,
+input[type=url]:not(.browser-default).invalid+label:after,
+input[type=url]:not(.browser-default):focus.invalid+label:after,
+input[type=time]:not(.browser-default).invalid+label:after,
+input[type=time]:not(.browser-default):focus.invalid+label:after,
+input[type=date]:not(.browser-default).invalid+label:after,
+input[type=date]:not(.browser-default):focus.invalid+label:after,
+input[type=datetime]:not(.browser-default).invalid+label:after,
+input[type=datetime]:not(.browser-default):focus.invalid+label:after,
+input[type=datetime-local]:not(.browser-default).invalid+label:after,
+input[type=datetime-local]:not(.browser-default):focus.invalid+label:after,
+input[type=tel]:not(.browser-default).invalid+label:after,
+input[type=tel]:not(.browser-default):focus.invalid+label:after,
+input[type=number]:not(.browser-default).invalid+label:after,
+input[type=number]:not(.browser-default):focus.invalid+label:after,
+input[type=search]:not(.browser-default).invalid+label:after,
+input[type=search]:not(.browser-default):focus.invalid+label:after,
+textarea.materialize-textarea.invalid+label:after,
+textarea.materialize-textarea:focus.invalid+label:after,
+.select-wrapper.invalid+label:after,
+select:not(.browser-default):focus.invalid+label:after,
+select:not(.browser-default).invalid+label:after {
+  content: attr(data-error);
+  color: #F44336;
+  opacity: 1;
+  -webkit-transform: translateY(-14px);
+  transform: translateY(-18px);
+  left: 30px;
+}
+
+.error-message {
+  webkit-transform: translateY(-14px) scale(0.8);
+  transform: translateY(-14px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: .75rem;
+  color: #9e9e9e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 1rem;
+  cursor: text;
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  text-align: initial;
+  -webkit-transform: translateY(12px);
+  transform: translateY(0px);
+  pointer-events: none;
+}
